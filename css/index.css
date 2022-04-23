@@ -242,3 +242,66 @@ body {
     
 
    }
+
+   /* RESPOSIVIDADE */
+@media (max-width: 730px){
+
+    #image-left-top{
+        width: 230px;
+        height: 207px;
+        top: -85px;
+        left: -20px;
+
+    }
+
+#image-right{
+    display: none;
+}
+
+
+.info{
+    width: 100vw;
+    border: 1px solid red;
+    z-index: 9;
+    display: unset;
+    margin-top: -20px;
+      
+}
+
+.info_title{
+    width: 100vw;
+    border: 1px solid orange;
+    margin-top: 0;
+    
+    
+}
+
+.info_title h1{
+    width: 100vw;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 7px;
+    
+
+}
+
+.info_title p {
+ font-family: 'Open Sans', sans-serif;
+ width: 100vw;
+ font-style: normal;
+ font-size: 15px;
+ line-height: 25px;
+ color: #fff;
+ padding-left: 7px;
+ box-sizing: border-box;
+
+}
+
+}
