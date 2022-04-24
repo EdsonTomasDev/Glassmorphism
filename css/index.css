@@ -6,13 +6,14 @@ body {
     padding: 0;
     margin: 0;
     height: 100vh;
+    width: 100vw;
     background: linear-gradient(to right,#55439E, #952FFF);
     
 }
 
 .main_container{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: relative;
     background-image: url('../images/Ellipse.png');
     background-repeat: no-repeat;
@@ -33,10 +34,10 @@ body {
 }
 
 #image-left-botton{
-    width: 284px;
-    height: 284px;
+    width: 224px;
+    height: 224px;
     position: absolute;
-    bottom: -30px;
+    bottom: 0;
     left: -10px;
 
 }
@@ -246,6 +247,30 @@ body {
    /* RESPOSIVIDADE------------------------------------------------ */
 @media (max-width: 730px){
 
+    body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(to right,#55439E, #952FFF);
+        
+    }
+
+    .main_container{
+        width: 99vw;
+        height: 99vh;
+        position: relative;
+        background-image: url('../images/Ellipse.png');
+        background-repeat: no-repeat; 
+        background-position-y: -250px;
+        background-position-x: -100px;
+        /* border: 1px solid yellow; */
+        align-items: unset;
+        justify-content: unset;
+       
+       
+    }
+
     #image-left-top{
         width: 230px;
         height: 207px;
@@ -255,29 +280,32 @@ body {
     }
 
     #image-left-botton{
-        width: 220px;
-        height: 197px;
+        width: 200px;
+        height: 177px;
         position: absolute;
-        top: 220px;
+        top: 200px;
         left: 50px;
     
     }
 
     #image-right{
         position: absolute;
-        Width: 207px;
-        Height: 275px;
-        top: 380px;
-        right: 0px;
+        Width: 157px;
+        Height: 225px;
+        top: 400px;
+        right: 0;
        }
 
 
 .info{
     width: 100vw;
+    /* height: 100px; */
     /* border: 1px solid red; */
     z-index: 9;
-    display: unset;
-    margin-top: -20px;
+    flex-direction: column;
+    justify-content: unset;
+    /* background-color: green; */
+  
       
 }
 
@@ -290,58 +318,60 @@ body {
 }
 
 .info_title h1{
-    width: 100vw;
+    width: 98vw;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 28px;
+    line-height: 35px;
     text-transform: capitalize;
     color: #fff;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding-left: 7px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding-left: 8px;
+    box-sizing: border-box;
     
-
 }
 
 .info_title p {
- font-family: 'Open Sans', sans-serif;
- width: 100vw;
- font-style: normal;
- font-size: 15px;
- line-height: 25px;
- color: #fff;
- padding-left: 7px;
- box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    width: 98vw;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    padding-left: 8px;
+    /* border: 1px solid yellow; */
+    box-sizing: border-box;
+    margin-bottom: 30px;
 
 }
 
 .info_submit{
-    width: 100vw;
+    width: 98vw;
     position: relative;
-    padding-left: 6px;
+    
     
 }
 
 .info_submit ::placeholder{
- font-family: 'Lato', sans-serif;
- font-style: normal;
- padding-left: 10px;
- font-size: 14px;
- line-height: 14px;
- color: #CDBFD8;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #CDBFD8;
 }
 
 .info_submit input{
-    width: 95vw;
+    width: 94vw;
     height: 50px;
     border-radius: 10px;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.7);
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(45px);
-   
+    margin-left: 6px;
 }
 
 .info_submit button{
@@ -359,25 +389,27 @@ body {
     outline: none;
     position: absolute;
     top: 8px;
-    right: 20px;
+    right: 10px;
 }
 
 
 /* ESTILO DO CARTÃO */
 .info_card{
-    margin-top: 90px;
-    padding-left: 7px;
+    margin-top: 60px;
+    /* border: 1px solid green; */
+    margin-left: 6px;
+   
 }
 .info_card--card{
-    width: 362px;
+    width: 96vw;
     height: 200px;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(45px);
     border-radius: 20px;
     position: relative;
     box-sizing: border-box;
-    padding-top: 20px;
     padding-left: 30px;
+    padding-top: 35px;
 }
 
  .info_card--card::before{
@@ -412,20 +444,22 @@ body {
 
 
 .info_card--title h2{
- font-family: 'Lato', sans-serif;
- font-style: normal;
- font-size: 16px;
- line-height: 28px;
- color: #fff;
- /* border: 1px solid black; */
- /* display: inline; */
- margin-top: 0;
- margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    /* border: 1px solid black; */
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
  
 
 }
 .info_card--chip{
     /* border: 1px solid yellow; */
+    margin-top: 10px;
     
  
 }
@@ -441,13 +475,13 @@ body {
 }
 
 .info_card--name_number p{
- font-family: 'Lato', sans-serif;
- font-style: normal;
- font-weight: normal;
- font-size: 14px;
- line-height: 16px;
- color: #fff;
- margin-top: 0;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    margin-top: 0;
 
 }
 
@@ -460,14 +494,14 @@ body {
 }
 
 .info_card--name_year p{
- font-family: 'Lato', sans-serif;
- font-style: normal;
- font-weight: normal;
- font-size: 16px;
- line-height: 18px;
- color: #fff;
- margin-right: 50px;
- margin-top: 52px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    margin-right: 50px;
+    margin-top: 52px;
  
 
 }
